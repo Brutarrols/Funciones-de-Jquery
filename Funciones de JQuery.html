@@ -9,8 +9,8 @@
     <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <section >
-        <button >AddClass</button>
+    <section id="1">
+        <button id="clase">AddClass</button>
         <aside>
         <h1>AddClass</h1>
         <p>Click the button to add class 'red' to this paragraph</p>
@@ -37,6 +37,7 @@
 
     $("#clase").click(function(){
         $("#1").addClass("red");
+        $(".red").css("backgroundColor", "red");
         });
 
     $('#showHidden').click(function(){
